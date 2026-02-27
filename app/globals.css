@@ -12,15 +12,102 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Base style from template */
+img:is([sizes="auto" i], [sizes^="auto," i]) {
+    contain-intrinsic-size: 3000px 1500px;
+}
+
+.about-us-section .elementor-widget-image img {
+    width: auto !important;
+    max-width: 260px !important;
+    max-height: 320px !important;
+    height: auto !important;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+.about-us-section .align-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-section .founder-name p {
+    margin-top: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .about-us-section .elementor-widget-image img {
+        max-width: 220px !important;
+        max-height: 260px !important;
+    }
+}
+
+.about-us-section {
+    padding: 50px 0;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 14px;
+}
+
+.founder-box img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.align-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1200px) {
+    .founder-box img {
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 767px) {
+    .founder-box img {
+        max-width: 220px;
+    }
+    #n2-ss-10,
+    .n2-ss-slider,
+    .n2-ss-slider-wrapper-inside {
+        height: 320px !important;
+        min-height: 320px !important;
+    }
+    .n2-ss-text {
+        font-size: 20px !important;
+        line-height: 1.3 !important;
+    }
+    .n2-ss-layer {
+        padding: 10px !important;
+    }
+    .n2-ss-button-container {
+        margin-top: 10px !important;
+    }
+}
+
+.top_panel .sc_layouts_menu_nav a span {
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.top_panel.scrolled .sc_layouts_menu_nav a span {
+  color: #000000 !important;
 }

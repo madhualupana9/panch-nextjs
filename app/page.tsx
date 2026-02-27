@@ -1,65 +1,206 @@
-import Image from "next/image";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import MainSlider from "@/components/MainSlider";
+import AboutUs from "@/components/AboutUs";
+import OurProjects from "@/components/OurProjects";
+import MobileMenu from "@/components/MobileMenu";
+import PassionateSection from "@/components/PassionateSection";
+import PlanningSection from "@/components/PlanningSection";
+import Script from "next/script";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <div className="body_wrap">
+      <div className="page_wrap">
+        <Header />
+        <MobileMenu />
+        
+        <main className="page_content_wrap">
+          <div className="content_wrap_fullscreen">
+            <div className="content">
+              <article className="post_item_single post_type_page status-publish hentry">
+                <div className="post_content entry-content">
+                  <div className="elementor elementor-26735">
+                    <MainSlider />
+                    
+                    <PassionateSection />
+                    
+                    <PlanningSection />
+                    
+                    <AboutUs />
+                    <OurProjects />
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </main>
+
+        <Footer />
+      </div>
+
+      {/* External Scripts for animations and legacy template features */}
+      <Script src="/assests/js/jquery.min.js" strategy="beforeInteractive" />
+      <Script src="/assests/js/jquery-migrate.min.js" strategy="beforeInteractive" />
+      
+      {/* Elementor Configs */}
+      <Script id="elementor-frontend-config-before" strategy="beforeInteractive">
+        {`
+          window.elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1280,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1279,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":true},"version":"3.33.4","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"theme_builder_v2":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"import-export-customization":true},"urls":{"assets":"","ajaxurl":"","uploadUrl":""},"nonces":{"floatingButtonsClickTracking":"a84ddbdc3c"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"stretched_section_container":".page_wrap","viewport_tablet":1279,"active_breakpoints":["mobile","tablet","laptop"],"viewport_laptop":1366,"viewport_mobile":767}};
+          window.ElementorProFrontendConfig = {"ajaxurl":"","nonce":"05abaf720f","urls":{"assets":"","rest":""},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":""}};
+        `}
+      </Script>
+
+      <Script src="/assests/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
+      <Script src="/assests/js/jquery.magnific-popup.min.js" strategy="afterInteractive" />
+      <Script src="/assests/js/gsap.min.js" strategy="afterInteractive" />
+      <Script src="/assests/js/webpack.runtime.min.js" strategy="afterInteractive" />
+      <Script src="/assests/js/frontend-modules.min.js" strategy="afterInteractive" />
+      <Script src="/assests/js/core.min.js" strategy="afterInteractive" />
+      <Script src="/assests/js/swiper.min.js" strategy="afterInteractive" />
+      
+      {/* Smart Slider Init */}
+      <Script id="n2-init" strategy="beforeInteractive">
+        {`
+          (function () {
+              this._N2 = this._N2 || {
+                  _r: [],
+                  _d: [],
+                  r: function () {
+                      this._r.push(arguments);
+                  },
+                  d: function () {
+                      this._d.push(arguments);
+                  },
+              };
+          }).call(window);
+        `}
+      </Script>
+      <Script src="/assests/js/n2.min.js" strategy="afterInteractive" />
+      <Script src="/assests/js/smartslider-frontend.min.js" strategy="afterInteractive" />
+      <Script src="/assests/js/ss-simple.min.js" strategy="afterInteractive" />
+      <Script src="/assests/js/w-arrow-image.min.js" strategy="afterInteractive" />
+
+      <Script id="n2-ss-init" strategy="afterInteractive">
+        {`
+          _N2.r("documentReady", function () {
+              _N2.r(["documentReady", "smartslider-frontend", "SmartSliderWidgetArrowImage", "ss-simple"], function () {
+                  new _N2.SmartSliderSimple("n2-ss-10", {
+                      admin: false,
+                      "background.video.mobile": 1,
+                      loadingTime: 2000,
+                      alias: { id: 0, smoothScroll: 0, slideSwitch: 0, scroll: 1 },
+                      align: "normal",
+                      isDelayed: 0,
+                      responsive: {
+                          mediaQueries: {
+                              all: false,
+                              desktopportrait: ["(min-width: 1200px)"],
+                              tabletportrait: [
+                                  "(orientation: landscape) and (max-width: 1199px) and (min-width: 901px)",
+                                  "(orientation: portrait) and (max-width: 1199px) and (min-width: 701px)",
+                              ],
+                              mobileportrait: [
+                                  "(orientation: landscape) and (max-width: 900px)",
+                                  "(orientation: portrait) and (max-width: 700px)",
+                              ],
+                          },
+                          base: {
+                              slideOuterWidth: 1260,
+                              slideOuterHeight: 750,
+                              sliderWidth: 1260,
+                              sliderHeight: 750,
+                              slideWidth: 1260,
+                              slideHeight: 750,
+                          },
+                          hideOn: {
+                              desktopLandscape: false,
+                              desktopPortrait: false,
+                              tabletLandscape: false,
+                              tabletPortrait: false,
+                              mobileLandscape: false,
+                              mobilePortrait: false,
+                          },
+                          onResizeEnabled: true,
+                          type: "fullwidth",
+                          sliderHeightBasedOn: "real",
+                          focusUser: 1,
+                          focusEdge: "auto",
+                          breakpoints: [
+                              {
+                                  device: "tabletPortrait",
+                                  type: "max-screen-width",
+                                  portraitWidth: 1199,
+                                  landscapeWidth: 1199,
+                              },
+                              { device: "mobilePortrait", type: "max-screen-width", portraitWidth: 700, landscapeWidth: 900 },
+                          ],
+                          enabledDevices: {
+                              desktopLandscape: 0,
+                              desktopPortrait: 1,
+                              tabletLandscape: 0,
+                              tabletPortrait: 1,
+                              mobileLandscape: 0,
+                              mobilePortrait: 1,
+                          },
+                          sizes: {
+                              desktopPortrait: { width: 1260, height: 750, max: 3000, min: 1200 },
+                              tabletPortrait: { width: 701, height: 417, customHeight: false, max: 1199, min: 701 },
+                              mobilePortrait: { width: 320, height: 260, customHeight: false, max: 900, min: 320 },
+                          },
+                          overflowHiddenPage: 0,
+                          focus: { offsetTop: "#wpadminbar", offsetBottom: "" },
+                      },
+                      controls: { mousewheel: 0, touch: "horizontal", keyboard: 1, blockCarouselInteraction: 1 },
+                      playWhenVisible: 1,
+                      playWhenVisibleAt: 0.5,
+                      lazyLoad: 0,
+                      lazyLoadNeighbor: 0,
+                      blockrightclick: 0,
+                      maintainSession: 0,
+                      autoplay: {
+                          enabled: 1,
+                          start: 1,
+                          duration: 3000,
+                          autoplayLoop: 1,
+                          allowReStart: 0,
+                          pause: { click: 0, mouse: "0", mediaStarted: 1 },
+                          resume: { click: 0, mouse: "0", mediaEnded: 1, slidechanged: 0 },
+                          interval: 1,
+                          intervalModifier: "loop",
+                          intervalSlide: "current",
+                      },
+                      perspective: 1500,
+                      layerMode: { playOnce: 0, playFirstLayer: 1, mode: "skippable", inAnimation: "mainInEnd" },
+                      bgAnimations: 0,
+                      mainanimation: {
+                          type: "fade",
+                          duration: 800,
+                          delay: 0,
+                          ease: "easeOutQuad",
+                          shiftedBackgroundAnimation: 0,
+                      },
+                      carousel: 1,
+                      initCallbacks: function () {
+                          new _N2.SmartSliderWidgetArrowImage(this);
+                      },
+                  });
+              });
+          });
+        `}
+      </Script>
+
+
+      {/* Main Template and Elementor Scripts */}
+      <Script src="/assests/js/__scripts.js" strategy="afterInteractive" />
+      <Script src="/assests/js/mouse-helper.js" strategy="afterInteractive" />
+      <Script src="/assests/js/superfish.min.js" strategy="afterInteractive" />
+      <Script src="/assests/js/frontend1.min.js" strategy="afterInteractive" />
+      <Script src="/assests/js/__scripts1.js" strategy="afterInteractive" />
+      <Script src="/assests/js/skin.js" strategy="afterInteractive" />
+      <Script src="/assests/js/webpack-pro.runtime.min.js" strategy="afterInteractive" />
+      <Script src="/assests/js/frontend.min.js" strategy="afterInteractive" />
+      <Script src="/assests/js/elements-handlers.min.js" strategy="afterInteractive" />
     </div>
   );
 }
