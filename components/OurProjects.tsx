@@ -1,4 +1,64 @@
+"use client";
+
+import { useEffect } from "react";
+
 export default function OurProjects() {
+  useEffect(() => {
+    const initSwiper = () => {
+      if ((window as any).Swiper) {
+        document.querySelectorAll(".elementor-main-swiper").forEach(function (el) {
+          const widget = el.closest(".elementor-widget-testimonial-carousel");
+          const settingsStr = widget?.getAttribute("data-settings");
+          if (settingsStr) {
+            try {
+              const settings = JSON.parse(settingsStr);
+              new (window as any).Swiper(el, {
+                slidesPerView: parseInt(settings.slides_per_view) || 1,
+                spaceBetween: settings.space_between?.size || 0,
+                loop: settings.loop === "yes",
+                autoplay:
+                  settings.autoplay === "yes"
+                    ? {
+                        delay: settings.autoplay_speed || 5000,
+                        disableOnInteraction: settings.pause_on_interaction === "yes",
+                      }
+                    : false,
+                navigation:
+                  settings.show_arrows === "yes"
+                    ? {
+                        nextEl: ".elementor-swiper-button-next",
+                        prevEl: ".elementor-swiper-button-prev",
+                      }
+                    : false,
+                pagination:
+                  settings.show_pagination === "yes"
+                    ? {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                      }
+                    : false,
+                breakpoints: {
+                  768: {
+                    slidesPerView: parseInt(settings.slides_per_view_tablet) || 2,
+                  },
+                  1024: {
+                    slidesPerView: parseInt(settings.slides_per_view) || 2,
+                  },
+                },
+              });
+            } catch (e) {
+              console.error("Error parsing Swiper settings", e);
+            }
+          }
+        });
+      } else {
+        setTimeout(initSwiper, 500);
+      }
+    };
+
+    initSwiper();
+  }, []);
+
   return (
     <>
       <section
