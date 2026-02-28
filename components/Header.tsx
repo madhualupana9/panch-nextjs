@@ -66,12 +66,12 @@ export default function Header() {
                         className="sc_layouts_menu_nav"
                       >
                         <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-28238">
-                          <a href="javascript:void(0);">
+                          <a href="#">
                             <span style={{ color: "#ffffff" }}>About Us</span>
                           </a>
                         </li>
                         <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18327">
-                          <a href="javascript:void(0);">
+                          <a href="#">
                             <span style={{ color: "#ffffff" }}>Projects</span>
                           </a>
                           <ul className="sub-menu">
@@ -80,19 +80,9 @@ export default function Header() {
                                 <span>Current Projects</span>
                               </a>
                               <ul className="sub-menu">
-                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-28244">
-                                  <a href="javascript:void(0);">
-                                    <span>Urban Elite Apartments</span>
-                                  </a>
-                                </li>
-                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-28242">
-                                  <a href="javascript:void(0);">
-                                    <span>Urban Elite Farms</span>
-                                  </a>
-                                </li>
                                 <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-28243">
-                                  <a href="javascript:void(0);">
-                                    <span>Premium County</span>
+                                  <a href="#">
+                                    <span>DRR Premium County</span>
                                   </a>
                                 </li>
                               </ul>
@@ -100,12 +90,12 @@ export default function Header() {
                           </ul>
                         </li>
                         <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263">
-                          <a href="javascript:void(0);">
+                          <a href="#">
                             <span style={{ color: "#ffffff" }}>Media</span>
                           </a>
                         </li>
                         <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263">
-                          <a href="javascript:void(0);">
+                          <a href="#">
                             <span style={{ color: "#ffffff" }}>Contact Us</span>
                           </a>
                         </li>

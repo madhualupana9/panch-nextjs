@@ -230,7 +230,7 @@ export default function OurProjects() {
                                               <div className="elementor-button-wrapper">
                                                 <a
                                                   className="elementor-button elementor-button-link elementor-size-sm"
-                                                  href="javascript:void(0);"
+                                                  href="#"
                                                 >
                                                   <span className="elementor-button-content-wrapper">
                                                     <span className="elementor-button-text">
@@ -315,7 +315,7 @@ export default function OurProjects() {
                                               <div className="elementor-button-wrapper">
                                                 <a
                                                   className="elementor-button elementor-button-link elementor-size-sm"
-                                                  href="javascript:void(0);"
+                                                  href="#"
                                                 >
                                                   <span className="elementor-button-content-wrapper">
                                                     <span className="elementor-button-text">

@@ -455,7 +455,7 @@ export default function MainSlider() {
                                                             >
                                                               <a
                                                                 className="n2-style-4e71a4f43fe4ff5a6b7ac2f8ef7bf4e8-heading n2-ow"
-                                                                href="javascript:void(0);"
+                                                                href="#"
                                                               >
                                                                 <div>
                                                                   <div>
@@ -599,7 +599,7 @@ export default function MainSlider() {
                                 </div>
                               </div>
                             </div>
-                            <ss3-loader></ss3-loader>
+                            {/* <ss3-loader></ss3-loader> */}
                           </div>
                         </div>
                       </div>

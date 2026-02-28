@@ -22,12 +22,12 @@ export default function MobileMenu() {
               >
                 <ul id="menu_mobile_252574338">
                   <li className="menu-item">
-                    <a href="javascript:void(0);">
+                    <a href="#">
                       <span style={{ color: "#ffffff" }}>About Us</span>
                     </a>
                   </li>
                   <li className="menu-item menu-item-has-children">
-                    <a href="javascript:void(0);">
+                    <a href="#">
                       <span style={{ color: "#FFFFFF" }}>Projects</span>
                     </a>
                     <ul className="sub-menu">
@@ -37,17 +37,17 @@ export default function MobileMenu() {
                         </a>
                         <ul className="sub-menu">
                           <li className="menu-item">
-                            <a href="javascript:void(0);">
+                            <a href="#">
                               <span>Urban Elite Apartments</span>
                             </a>
                           </li>
                           <li className="menu-item">
-                            <a href="javascript:void(0);">
+                            <a href="#">
                               <span>Urban Elite Farms</span>
                             </a>
                           </li>
                           <li className="menu-item">
-                            <a href="javascript:void(0);">
+                            <a href="#">
                               <span>Premium County</span>
                             </a>
                           </li>
@@ -56,12 +56,12 @@ export default function MobileMenu() {
                     </ul>
                   </li>
                   <li className="menu-item">
-                    <a href="javascript:void(0);">
+                    <a href="#">
                       <span style={{ color: "#FFFFFF" }}>Media</span>
                     </a>
                   </li>
                   <li className="menu-item">
-                    <a href="javascript:void(0);">
+                    <a href="#">
                       <span style={{ color: "#FFFFFF" }}>Contact Us</span>
                     </a>
                   </li>
@@ -70,21 +70,21 @@ export default function MobileMenu() {
               <div className="socials_mobile">
                 <a
                   target="_blank"
-                  href="javascript:void(0);"
+                  href="#"
                   className="social_item"
                 >
                   <span className="social_icon icon-facebook-1"></span>
                 </a>
                 <a
                   target="_blank"
-                  href="javascript:void(0);"
+                  href="#"
                   className="social_item"
                 >
                   <span className="social_icon icon-instagram"></span>
                 </a>
                 <a
                   target="_blank"
-                  href="javascript:void(0);"
+                  href="#"
                   className="social_item"
                 >
                   <span className="social_icon trx_addons_icon-youtube2"></span>
