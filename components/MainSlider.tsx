@@ -124,7 +124,7 @@ export default function MainSlider() {
                                         <picture className="skip-lazy" data-skip-lazy="1">
                                           <img
                                             decoding="async"
-                                            src="https://static.wixstatic.com/media/0f832a_598c3812f18a40e4af5023282891e1a8~mv2.png/v1/fill/w_925,h_520,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/0f832a_598c3812f18a40e4af5023282891e1a8~mv2.png"
+                                            src="/assests/image/banner1.jpg"
                                             alt=""
                                             title=""
                                             loading="lazy"
@@ -148,6 +148,8 @@ export default function MainSlider() {
                                       data-related-device="desktopPortrait"
                                       className="n2-ow n2-ss-preserve-size n2-ss-preserve-size--slider n2-ss-slide-limiter"
                                     ></svg>
+                                    
+                                    {/* Slide 1 */}
                                     <div
                                       data-first="1"
                                       data-slide-duration="0"
@@ -156,37 +158,54 @@ export default function MainSlider() {
                                       data-title="Slide 1"
                                       className="n2-ss-slide n2-ow n2-ss-slide-69"
                                     >
-                                      <div
-                                        role="note"
-                                        className="n2-ss-slide--focus"
-                                        tabIndex={-1}
-                                      >
-                                        Slide 1
-                                      </div>
+                                      <div role="note" className="n2-ss-slide--focus" tabIndex={-1}>Slide 1</div>
                                       <div className="n2-ss-layers-container n2-ss-slide-limiter n2-ow">
-                                        <div
-                                          className="n2-ss-layer n2-ow n-uc-HsRl2sehyV33"
-                                          data-sstype="slide"
-                                          data-pm="default"
-                                        >
-                                          <div
-                                            className="n2-ss-layer n2-ow n-uc-9rlrHGNjqbv4"
-                                            data-pm="default"
-                                            data-sstype="content"
-                                            data-hasbackground="0"
-                                          >
-                                            <div className="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-9rlrHGNjqbv4-inner">
-                                              <div
-                                                className="n2-ss-layer n2-ow n2-ss-layer--block n2-ss-has-self-align n-uc-x5qDrX9DcsEI"
-                                                data-pm="normal"
-                                                data-sstype="row"
-                                              >
-                                                <div className="n2-ss-layer-row n2-ss-layer-with-background n-uc-x5qDrX9DcsEI-inner">
+                                        <div className="n2-ss-layer n2-ow n-uc-Uz9xGKsWpY5f" data-sstype="slide" data-pm="default">
+                                          <div className="n2-ss-layer n2-ow n-uc-zMaqAOHPG9gJ" data-pm="default" data-sstype="content" data-hasbackground="0">
+                                            <div className="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-zMaqAOHPG9gJ-inner">
+                                              <div className="n2-ss-layer n2-ow n2-ss-layer--block n2-ss-has-self-align n-uc-XX8bsul3yDds" data-pm="normal" data-sstype="row">
+                                                <div className="n2-ss-layer-row n2-ss-layer-with-background n-uc-XX8bsul3yDds-inner">
                                                   <div className="n2-ss-layer-row-inner">
-                                                     <div className="n2-ss-layer n2-ow n2-ss-layer--block n-uc-L9p989M40R9z" data-pm="normal" data-sstype="col">
-                                                        <div className="n2-ss-layer-col n2-ss-layer-with-background n-uc-L9p989M40R9z-inner">
+                                                     <div className="n2-ss-layer n2-ow n2-ss-layer--block n-uc-646ZIVmlbjwP" data-pm="normal" data-sstype="col">
+                                                        <div className="n2-ss-layer-col n2-ss-layer-with-background n-uc-646ZIVmlbjwP-inner">
                                                            <div className="n2-ss-layer-col-inner">
-                                                              <div className="n2-ss-layer n2-ow n-uc-n8M8M8M8M8M8" data-pm="normal" data-sstype="heading">
+                                                              <div className="n2-ss-layer n2-ow n-uc-qzdqKzEO3yRM" data-pm="normal" data-sstype="heading">
+                                                                 <div className="n2-ss-layer-content n2-ow">
+                                                                    <div className="n2-ss-text">Own Land. Build Dreams. Create Legacy.</div>
+                                                                 </div>
+                                                              </div>
+                                                           </div>
+                                                        </div>
+                                                     </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    {/* Slide 2 */}
+                                    <div
+                                      data-slide-duration="0"
+                                      data-id="70"
+                                      data-slide-public-id="2"
+                                      data-title="Slide 2"
+                                      className="n2-ss-slide n2-ow n2-ss-slide-70"
+                                    >
+                                      <div role="note" className="n2-ss-slide--focus" tabIndex={-1}>Slide 2</div>
+                                      <div className="n2-ss-layers-container n2-ss-slide-limiter n2-ow">
+                                        <div className="n2-ss-layer n2-ow n-uc-NlSXBLgcSug4" data-sstype="slide" data-pm="default">
+                                          <div className="n2-ss-layer n2-ow n-uc-Y9c3LVflqdH7" data-pm="default" data-sstype="content" data-hasbackground="0">
+                                            <div className="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-Y9c3LVflqdH7-inner">
+                                              <div className="n2-ss-layer n2-ow n2-ss-layer--block n2-ss-has-self-align n-uc-fQXmrHWmRqW3" data-pm="normal" data-sstype="row">
+                                                <div className="n2-ss-layer-row n2-ss-layer-with-background n-uc-fQXmrHWmRqW3-inner">
+                                                  <div className="n2-ss-layer-row-inner">
+                                                     <div className="n2-ss-layer n2-ow n2-ss-layer--block n-uc-9iIns52tIVHZ" data-pm="normal" data-sstype="col">
+                                                        <div className="n2-ss-layer-col n2-ss-layer-with-background n-uc-9iIns52tIVHZ-inner">
+                                                           <div className="n2-ss-layer-col-inner">
+                                                              <div className="n2-ss-layer n2-ow n-uc-KrkAmYcTBPzB" data-pm="normal" data-sstype="heading">
                                                                  <div className="n2-ss-layer-content n2-ow">
                                                                     <div className="n2-ss-text">Invest in Land.<br/>Invest in Tomorrow</div>
                                                                  </div>
@@ -209,6 +228,43 @@ export default function MainSlider() {
                                         </div>
                                       </div>
                                     </div>
+
+                                    {/* Slide 3 */}
+                                    <div
+                                      data-slide-duration="0"
+                                      data-id="71"
+                                      data-slide-public-id="3"
+                                      data-title="Slide 3"
+                                      className="n2-ss-slide n2-ow n2-ss-slide-71"
+                                    >
+                                      <div role="note" className="n2-ss-slide--focus" tabIndex={-1}>Slide 3</div>
+                                      <div className="n2-ss-layers-container n2-ss-slide-limiter n2-ow">
+                                        <div className="n2-ss-layer n2-ow n-uc-Zkj6nPNXQn6B" data-sstype="slide" data-pm="default">
+                                          <div className="n2-ss-layer n2-ow n-uc-Lc5ZRQEOt7Oi" data-pm="default" data-sstype="content" data-hasbackground="0">
+                                            <div className="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-Lc5ZRQEOt7Oi-inner">
+                                              <div className="n2-ss-layer n2-ow n2-ss-layer--block n2-ss-has-self-align n-uc-3lHN1Md1tQdK" data-pm="normal" data-sstype="row">
+                                                <div className="n2-ss-layer-row n2-ss-layer-with-background n-uc-3lHN1Md1tQdK-inner">
+                                                  <div className="n2-ss-layer-row-inner">
+                                                     <div className="n2-ss-layer n2-ow n2-ss-layer--block n-uc-9nGXCO8aGnjI" data-pm="normal" data-sstype="col">
+                                                        <div className="n2-ss-layer-col n2-ss-layer-with-background n-uc-9nGXCO8aGnjI-inner">
+                                                           <div className="n2-ss-layer-col-inner">
+                                                              <div className="n2-ss-layer n2-ow n-uc-kI4Y7HECCnmw" data-pm="normal" data-sstype="heading">
+                                                                 <div className="n2-ss-layer-content n2-ow">
+                                                                    <div className="n2-ss-text">Invest in Hyderabad’s Emerging Growth Corridors</div>
+                                                                 </div>
+                                                              </div>
+                                                           </div>
+                                                        </div>
+                                                     </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
                                   </div>
                                 </div>
                               </div>

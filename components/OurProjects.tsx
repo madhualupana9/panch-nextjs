@@ -278,6 +278,15 @@ export default function OurProjects() {
                         </div>
                       </div>
                     </div>
+                    <div className="elementor-swiper-button elementor-swiper-button-prev" role="button" tabIndex={0}>
+                        <i className="eicon-chevron-left" aria-hidden="true"></i>
+                        <span className="elementor-screen-only">Previous</span>
+                    </div>
+                    <div className="elementor-swiper-button elementor-swiper-button-next" role="button" tabIndex={0}>
+                        <i className="eicon-chevron-right" aria-hidden="true"></i>
+                        <span className="elementor-screen-only">Next</span>
+                    </div>
+                    <div className="swiper-pagination"></div>
                   </div>
                 </div>
               </div>

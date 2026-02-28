@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Paanchajanya Eco Villages - Buy Luxury Apartments, Villas and More!",
@@ -36,7 +37,7 @@ export default function RootLayout({
           property="stylesheet"
           rel="stylesheet"
           id="balance-font-google_fonts-css"
-          href="/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&subset=latin,latin-ext&display=swap"
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&subset=latin,latin-ext&display=swap"
           type="text/css"
           media="all"
         />
@@ -346,6 +347,28 @@ export default function RootLayout({
         />
       </head>
       <body className="home page-template-default page page-id-26735 wp-custom-logo sp-easy-accordion-enabled rttpg rttpg-7.7.19 radius-frontend rttpg-body-wrap rttpg-flaticon frontpage skin_default scheme_light blog_mode_front body_style_fullscreen is_stream blog_style_classic_3 sidebar_hide expand_content remove_margins trx_addons_present header_type_custom header_style_header-custom-20908 header_position_over menu_side_none no_layout fixed_blocks_sticky elementor-default elementor-kit-15 elementor-page elementor-page-26735">
+        <Script src="/assests/js/jquery.min.js" strategy="beforeInteractive" />
+        <Script src="/assests/js/jquery-migrate.min.js" strategy="beforeInteractive" />
+        <Script id="n2-init" strategy="beforeInteractive">
+          {`
+            (function () {
+                this._N2 = this._N2 || {
+                    _r: [],
+                    _d: [],
+                    r: function () {
+                        this._r.push(arguments);
+                    },
+                    d: function () {
+                        this._d.push(arguments);
+                    },
+                };
+            }).call(window);
+          `}
+        </Script>
+        <Script src="/assests/js/n2.min.js" strategy="beforeInteractive" />
+        <Script src="/assests/js/smartslider-frontend.min.js" strategy="beforeInteractive" />
+        <Script src="/assests/js/ss-simple.min.js" strategy="beforeInteractive" />
+        <Script src="/assests/js/w-arrow-image.min.js" strategy="beforeInteractive" />
         {children}
       </body>
     </html>
