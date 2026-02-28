@@ -35,12 +35,12 @@ export default function MainSlider() {
                   ],
                 },
                 base: {
-                  slideOuterWidth: 1260,
-                  slideOuterHeight: 750,
-                  sliderWidth: 1260,
-                  sliderHeight: 750,
-                  slideWidth: 1260,
-                  slideHeight: 750,
+                  slideOuterWidth: 1134,
+                  slideOuterHeight: 675,
+                  sliderWidth: 1134,
+                  sliderHeight: 675,
+                  slideWidth: 1134,
+                  slideHeight: 675,
                 },
                 hideOn: {
                   desktopLandscape: false,
@@ -73,8 +73,8 @@ export default function MainSlider() {
                   mobilePortrait: 1,
                 },
                 sizes: {
-                  desktopPortrait: { width: 1260, height: 750, max: 3000, min: 1200 },
-                  tabletPortrait: { width: 701, height: 417, customHeight: false, max: 1199, min: 701 },
+                  desktopPortrait: { width: 1134, height: 675, max: 3000, min: 1100 },
+                  tabletPortrait: { width: 701, height: 417, customHeight: false, max: 1099, min: 701 },
                   mobilePortrait: { width: 320, height: 260, customHeight: false, max: 900, min: 320 },
                 },
                 overflowHiddenPage: 0,
@@ -276,7 +276,7 @@ export default function MainSlider() {
                                     <div className="n2-ss-slider-4 n2-ow">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 1260 750"
+                                        viewBox="0 0 1134 675"
                                         data-related-device="desktopPortrait"
                                         className="n2-ow n2-ss-preserve-size n2-ss-preserve-size--slider n2-ss-slide-limiter"
                                       ></svg>

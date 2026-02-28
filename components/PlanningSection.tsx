@@ -5,9 +5,15 @@ export default function PlanningSection() {
       data-id="e8b117a"
       data-element_type="section"
       data-settings='{"background_background":"classic"}'
+      style={{ 
+        backgroundImage: 'url("/wp-content/uploads/2024/07/slide-3-5.jpg")',
+        backgroundPosition: 'bottom center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'
+      }}
     >
-      <div className="elementor-background-overlay"></div>
-      <div className="elementor-container elementor-column-gap-extended">
+      <div className="elementor-background-overlay" style={{ backgroundColor: 'rgba(255, 255, 255, 0.4)', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}></div>
+      <div className="elementor-container elementor-column-gap-extended" style={{ position: 'relative', zIndex: 1 }}>
         <div
           className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-88b25eb sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static"
           data-id="88b25eb"
